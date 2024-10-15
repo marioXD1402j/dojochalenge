@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario con Almuerzos y Descansos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+    
+        <div class="calendar">
+
+            <div class="calendar-header">
+                <h2>Octubre 2024</h2>
+            </div>
+            <table>
+                <tr class="weekdays">
+                    <th>Lun</th>
+                    <th>Mar</th>
+                    <th>Mie</th>
+                    <th>Jue</th>
+                    <th>Vie</th>
+                    <th>Sab</th>
+                    <th>Dom</th>
+                </tr>
+                <tr>
+                    <td class="highlight">
+                            <div class="day-number">30</div>
+                            <a href="{{ url_for('plato', nombre='quinoa') }}" class="lunch">Ensalada de Quinoa</a>
+                            <a href="{{ url_for('plato', nombre='pollo') }}" class="lunch">Pollo a la plancha</a>
+                            <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                        </td>
+                        
+                    </td> <!-- Lunes 30 de septiembre -->
+                    <td class="highlight">
+                        <div class="day-number">1</div>
+                        <a href="{{ url_for('plato', nombre='crema_verduras') }}" class="lunch">Crema de Verduras</a>
+                        <a href="{{ url_for('plato', nombre='pescado') }}" class="lunch">Pescado con arroz</a>
+                        <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                    </td>
+                
+                        <td class="highlight">
+                            <div class="day-number">2</div>
+                            <a href="{{ url_for('plato', nombre='garbanzos') }}" class="lunch">Ensalada de Garbanzos</a>
+                            <a href="{{ url_for('plato', nombre='tortilla_espinacas') }}" class="lunch">Tortilla de Espinacas</a>
+                            <a href="{{ url_for('plato', nombre='gelatina') }}" class="lunch">Gelatina</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">3</div>
+                            <a href="{{ url_for('plato', nombre='pure_papa') }}" class="lunch">Puré de Papa</a>
+                            <a href="{{ url_for('plato', nombre='carne_horno') }}" class="lunch">Carne al horno</a>
+                            <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">4</div>
+                            <a href="{{ url_for('plato', nombre='sopa_pollo') }}" class="lunch">Sopa de Pollo</a>
+                            <a href="{{ url_for('plato', nombre='pasta_salsa') }}" class="lunch">Pasta con salsa</a>
+                            <a href="{{ url_for('plato', nombre='flan') }}" class="lunch">Flan</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">5</div>
+                            <div class="rest-day">Descanso</div>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">6</div>
+                            <div class="rest-day">Descanso</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">
+                            <div class="day-number">7</div>
+                            <a href="{{ url_for('plato', nombre='ensalada_tomate') }}" class="lunch">Ensalada de Tomate</a>
+                            <a href="{{ url_for('plato', nombre='pollo_curry') }}" class="lunch">Pollo al curry</a>
+                            <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">8</div>
+                            <a href="{{ url_for('plato', nombre='gazpacho') }}" class="lunch">Gazpacho</a>
+                            <a href="{{ url_for('plato', nombre='lentejas_estofadas') }}" class="lunch">Lentejas estofadas</a>
+                            <a href="{{ url_for('plato', nombre='helado') }}" class="lunch">Helado</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">9</div>
+                            <a href="{{ url_for('plato', nombre='verduras_salteadas') }}" class="lunch">Verduras salteadas</a>
+                            <a href="{{ url_for('plato', nombre='filete_ternera') }}" class="lunch">Filete de ternera</a>
+                            <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">10</div>
+                            <a href="{{ url_for('plato', nombre='ensalada_cesar') }}" class="lunch">Ensalada César</a>
+                            <a href="{{ url_for('plato', nombre='hamburguesa') }}" class="lunch">Hamburguesa</a>
+                            <a href="{{ url_for('plato', nombre='yogur') }}" class="lunch">Yogur</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">11</div>
+                            <a href="{{ url_for('plato', nombre='pure_papa') }}" class="lunch">Puré de Papa</a>
+                            <a href="{{ url_for('plato', nombre='carne_asada') }}" class="lunch">Carne asada</a>
+                            <a href="{{ url_for('plato', nombre='helado') }}" class="lunch">Helado</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">12</div>
+                            <div class="rest-day">Descanso</div>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">13</div>
+                            <div class="rest-day">Descanso</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">
+                            <div class="day-number">14</div>
+                            <a href="{{ url_for('plato', nombre='ensalada_rusa') }}" class="lunch">Ensalada Rusa</a>
+                            <a href="{{ url_for('plato', nombre='pescado_empanizado') }}" class="lunch">Pescado empanizado</a>
+                            <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">15</div>
+                            <a href="{{ url_for('plato', nombre='caldo_res') }}" class="lunch">Caldo de Res</a>
+                            <a href="{{ url_for('plato', nombre='arroz_pollo') }}" class="lunch">Arroz con Pollo</a>
+                            <a href="{{ url_for('plato', nombre='gelatina') }}" class="lunch">Gelatina</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">16</div>
+                            <a href="{{ url_for('plato', nombre='sopa_verduras') }}" class="lunch">Sopa de Verduras</a>
+                            <a href="{{ url_for('plato', nombre='pizza') }}" class="lunch">Pizza</a>
+                            <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">17</div>
+                            <a href="{{ url_for('plato', nombre='ensalada_atun') }}" class="lunch">Ensalada de Atún</a>
+                            <a href="{{ url_for('plato', nombre='pollo_horno') }}" class="lunch">Pollo al horno</a>
+                            <a href="{{ url_for('plato', nombre='yogur') }}" class="lunch">Yogur</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">18</div>
+                            <a href="{{ url_for('plato', nombre='pasta_pesto') }}" class="lunch">Pasta al pesto</a>
+                            <a href="{{ url_for('plato', nombre='carne_molida') }}" class="lunch">Carne molida</a>
+                            <a href="{{ url_for('plato', nombre='helado') }}" class="lunch">Helado</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">19</div>
+                            <div class="rest-day">Descanso</div>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">20</div>
+                            <div class="rest-day">Descanso</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">
+                            <div class="day-number">21</div>
+                            <a href="{{ url_for('plato', nombre='ensalada_pollo') }}" class="lunch">Ensalada de Pollo</a>
+                            <a href="{{ url_for('plato', nombre='quiche') }}" class="lunch">Quiche</a>
+                            <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">22</div>
+                            <a href="{{ url_for('plato', nombre='sopa_fideos') }}" class="lunch">Sopa de fideos</a>
+                            <a href="{{ url_for('plato', nombre='arroz_frito') }}" class="lunch">Arroz frito</a>
+                            <a href="{{ url_for('plato', nombre='gelatina') }}" class="lunch">Gelatina</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">23</div>
+                            <a href="{{ url_for('plato', nombre='pescado_plancha') }}" class="lunch">Pescado a la plancha</a>
+                            <a href="{{ url_for('plato', nombre='ensalada_verde') }}" class="lunch">Ensalada verde</a>
+                            <a href="{{ url_for('plato', nombre='yogur') }}" class="lunch">Yogur</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">24</div>
+                            <a href="{{ url_for('plato', nombre='tortilla_espanola') }}" class="lunch">Tortilla Española</a>
+                            <a href="{{ url_for('plato', nombre='pasta_verduras') }}" class="lunch">Pasta con verduras</a>
+                            <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">25</div>
+                            <a href="{{ url_for('plato', nombre='fideos_salsa') }}" class="lunch">Fideos con salsa</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">26</div>
+                            <div class="rest-day">Descanso</div>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">27</div>
+                            <div class="rest-day">Descanso</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="highlight">
+                            <div class="day-number">28</div>
+                            <a href="{{ url_for('plato', nombre='chili_carne') }}" class="lunch">Chili con carne</a>
+                            <a href="{{ url_for('plato', nombre='arroz_integral') }}" class="lunch">Arroz integral</a>
+                            <a href="{{ url_for('plato', nombre='gelatina') }}" class="lunch">Gelatina</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">29</div>
+                            <a href="{{ url_for('plato', nombre='wrap_pollo') }}" class="lunch">Wrap de pollo</a>
+                            <a href="{{ url_for('plato', nombre='pasta_pesto') }}" class="lunch">Pasta al pesto</a>
+                            <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">30</div>
+                            <a href="{{ url_for('plato', nombre='tacos_carne') }}" class="lunch">Tacos de carne</a>
+                            <a href="{{ url_for('plato', nombre='arroz_frijoles') }}" class="lunch">Arroz con frijoles</a>
+                            <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                        </td>
+                        <td class="highlight">
+                            <div class="day-number">31</div>
+                            <a href="{{ url_for('plato', nombre='ensalada_atun') }}" class="lunch">Ensalada de atún</a>
+                            <a href="{{ url_for('plato', nombre='sopa_pollo') }}" class="lunch">Sopa de pollo</a>
+                            <a href="{{ url_for('plato', nombre='yogur') }}" class="lunch">Yogur</a>
+                        </td>
+                        <td class="highlight">
+                        <div class="day-number">1</div>
+                        <a href="{{ url_for('plato', nombre='pasta') }}" class="lunch">Pasta con salsa</a><br>
+                        <a href="{{ url_for('plato', nombre='pollo_al_horno') }}" class="lunch">Pollo al horno</a><br>
+                        <a href="{{ url_for('plato', nombre='fruta') }}" class="lunch">Fruta</a>
+                    </td>
+                
+                        <td class="highlight">
+                        <div class="day-number">2</div>
+                        <div class="rest-day">Descanso</div>
+            
+                        <td class="highlight">
+                            <div class="day-number">3</div>
+                            <div class="rest-day">Descanso</div>
+                    </td>
+        </div>
+    </div>
+</body>
+</html>

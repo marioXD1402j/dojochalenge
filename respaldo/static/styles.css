@@ -1,0 +1,155 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center; /* Centrar el calendario en la página */
+    padding: 90px;
+}
+
+/* Calendar Styles */
+.calendar {
+    width: 65%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.calendar:hover {
+    
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+    font-size: 29px;
+    color: #1e90ff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.calendar table {
+    background-image: url("https://images7.alphacoders.com/137/1379067.jpg"); 
+    border-collapse: collapse;
+}
+
+.calendar table th, .calendar table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 15px;
+    width: calc(100% / 7);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.calendar table th {
+    background-color: #1e90ff;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.calendar table td {
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.calendar table td:hover {
+    background-color: #00000000;
+}
+
+.calendar .inactive {
+    color: #dcdcdc;
+}
+
+.calendar .highlight {
+    background-color: #2da6cfde;
+    font-weight: bold;
+}
+
+/* Estilos para los almuerzos */
+.lunch {
+    font-size: 16px;
+    color: #ff0000a3;
+    margin: 5px 0;
+}
+
+/* Estilo para los días de descanso */
+.rest-day {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000d0;
+    margin-top: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-bar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-bar > li {
+    position: relative;
+}
+
+.nav-bar a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-bar a:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown a {
+    padding: 12px 16px;
+}
+
+.nav-bar li:hover .dropdown {
+    display: block;
+}
+
+.dropdown ul {
+    display: none;
+}
+
+.dropdown li:hover > ul {
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #444;
+    z-index: 1;
+}
